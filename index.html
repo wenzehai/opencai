@@ -1,0 +1,315 @@
+<!-- 基础Bootstrap文档 -->
+<!DOCTYPE html>
+<html lang="zh-cn">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1 user-scalable=no">
+  <title>基础Bootstrap文档</title>
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+
+  <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
+      <script src="http://cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="http://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body class="open">
+  <!-- 引入自带的Glyphicons -->
+  <!-- 引入方法为<span class="glyphicon glyphicon-search"></span> -->
+  <nav class="navbar navbar-default">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"
+          aria-expanded="false">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#">LOGO</a>
+      </div>
+
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav navbar-right">
+          <li class="active">
+            <a href="#">开彩网官网 opencai.net
+              <span class="sr-only">(current)</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">价格与折扣</a>
+          </li>
+          <li>
+            <a href="#">实时试用(免费)</a>
+          </li>
+          <li>
+            <a href="#">注册&登录</a>
+          </li>
+        </ul>
+      </div>
+      <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container-fluid -->
+  </nav>
+  <div class="container-fluid">
+    <div class="row acountInfo">
+      <div class="col-md-4 acountBox">
+        <p>
+          <span class="glyphicon glyphicon-th-large"></span>TOKEN:
+          <span class="username"></span>
+        </p>
+        <p>
+          <span class="glyphicon glyphicon-user"></span>主账号:
+          <span class="username"></span>
+        </p>
+      </div>
+      <div class="col-md-4 demoBox">
+        <p class="demoTitle">DEMONSTRATION</p>
+        <p class="demoInfo">
+          <span class="glyphicon glyphicon-envelope"></span>电子邮箱:
+          <span class="username">ad**n@opencai.net</span>
+        </p>
+      </div>
+      <div class="col-md-4 demoBox">
+        <p class="demoTitle">DEMONSTRATION</p>
+        <p class="demoInfo">
+          <span class="glyphicon glyphicon-phone"></span>手机号码:
+          <span class="username">129**4399</span>
+        </p>
+      </div>
+    </div>
+    <hr>
+    <div class="row tipBox">
+      <div class="col-md-12 tipTitle">
+        <h4>注意事项</h4>
+      </div>
+      <div class="col-md-12 tipBody">
+        <ul>
+          <li>
+            <span class="red">演示接口</span>采用单服务器(4核8G)作为负载，响应带宽为10Mbps。作为单机服务器，硬件资源有限，请注意控制采集频率。</li>
+          <li>接口“按照最新查询”供频繁请求使用，请求限制为每个IP地址请求每个彩种的间隔必须大于3秒。</li>
+          <li>接口“按照日期查询”仅供补漏时使用，请求限制为每个IP地址请求每个彩种的间隔必须大于10秒。 </li>
+          <li>演示接口由于目的只是为了让开发人员能了解功能与格式，所以我们隐藏掉部份开奖号码，测试时将“*”替换成任意数字即可。</li>
+          <li>为了保正请求的接口地址的正确性，请尽量使用下列自动选项生成您的接口，不要手工输入参数。</li>
+          <li>请求数据过程中，如果存在频率过快，将直接返回中文提示信息（Text格式）。</li>
+        </ul>
+      </div>
+    </div>
+    <hr>
+    <div class="row operateBox">
+      <div class="col-md-12 operateTitle">
+        <h4>自助接口生成</h4>
+      </div>
+      <div class="col-md-12">
+        <div class="row">
+          <div class="col-md-2 operateLabels">
+            <p>接口域名：</p>
+          </div>
+          <div class="col-md-10 operateBtns">
+            <div class="btn-group" role="group">
+              <button type="button" class="btn btn-primary divder2">t.apiplus.net
+                <span class="label">主接口</span>
+              </button>
+              <button type="button" class="btn btn-default divder2">Middle
+                <span class="label">备用接口</span>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-2 operateLabels">
+            <p>接口种类：</p>
+          </div>
+          <div class="col-md-10 operateBtns">
+            <div class="btn-group" role="group">
+              <button type="button" class="btn btn-primary divder3">t.apiplus.net
+                <span class="label">默认</span>
+              </button>
+              <button type="button" class="btn btn-default divder3">Middle
+              </button>
+              <button type="button" class="btn btn-default divder3">Middle
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-2 operateLabels">
+            <p>网址格式：</p>
+          </div>
+          <div class="col-md-10 operateBtns">
+            <div class="btn-group" role="group">
+              <button type="button" class="btn btn-primary divder4">t.apiplus.net
+                <span class="label">默认</span>
+              </button>
+              <button type="button" class="btn btn-default divder4">Middle
+              </button>
+              <button type="button" class="btn btn-default divder4">Middle
+              </button>
+              <button type="button" class="btn btn-default divder4">Middle
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+            <div class="col-md-2 operateLabels">
+              <p>数据格式：</p>
+            </div>
+            <div class="col-md-10 operateBtns">
+              <div class="btn-group" role="group">
+                <button type="button" class="btn btn-primary divder2">t.apiplus.net
+                  <span class="label">默认</span>
+                </button>
+                <button type="button" class="btn btn-default divder2">Middle
+                </button>
+              </div>
+            </div>
+          </div>
+        <div class="row">
+          <div class="col-md-2 operateLabels">
+            <p>返回行数：</p>
+          </div>
+          <div class="col-md-10 operateBtns">
+            <div class="btn-group" role="group">
+              <button type="button" class="btn btn-primary divder13">1
+                  <span class="label">默认</span>
+              </button>
+              <button type="button" class="btn btn-default divder13">2</button>
+              <button type="button" class="btn btn-default divder13">3</button>
+              <button type="button" class="btn btn-default divder13">4</button>
+              <button type="button" class="btn btn-default divder13">5</button>
+              <button type="button" class="btn btn-default divder13">6</button>
+              <button type="button" class="btn btn-default divder13">7</button>
+              <button type="button" class="btn btn-default divder13">8</button>
+              <button type="button" class="btn btn-default divder13">9</button>
+              <button type="button" class="btn btn-default divder13">10</button>
+              <button type="button" class="btn btn-default divder13">12</button>
+              <button type="button" class="btn btn-default divder13">15</button>
+              <button type="button" class="btn btn-default divder13">20</button>
+            </div>
+          </div>
+        </div>
+        
+      </div>
+
+    </div>
+    <hr>
+    <div class="row portBox">
+      <div class="col-md-12 portTitle">
+        <h4>接口列表共计166种(131高频 +35低频)</h4>
+      </div>
+      <div class="col-md-12 portBody">
+        <p class="subTitle">高频类彩票接口 (131种)</p>
+        <ul>
+          <li class="listItem">
+            <span class="caizongTitle">安徽11选5</span>http://t.apiplus.cn/newly.do?code=ah11x5&format=json
+            <button class="btn btn-success btnRight><span class=" glyphicon glyphicon-share-alt "></span>访问接口</button></li>
+            <li class="listItem "><span class="caizongTitle
+              ">安徽11选5</span>http://t.apiplus.cn/newly.do?code=ah11x5&format=json<button class="btn btn-success btnRight>
+              <span class="glyphicon glyphicon-share-alt"></span>访问接口</button>
+          </li>
+          <li class="listItem">
+            <span class="caizongTitle">安徽11选5</span>http://t.apiplus.cn/newly.do?code=ah11x5&format=json
+            <button class="btn btn-success btnRight><span class=" glyphicon glyphicon-share-alt "></span>访问接口</button></li>
+            <li class="listItem "><span class="caizongTitle
+              ">安徽11选5</span>http://t.apiplus.cn/newly.do?code=ah11x5&format=json<button class="btn btn-success btnRight>
+              <span class="glyphicon glyphicon-share-alt"></span>访问接口</button>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <hr>
+    <div class="row tipBox">
+      <div class="col-md-12 tipTitle">
+        <h4>注意事项</h4>
+      </div>
+      <div class="col-md-12 tipBody">
+        <table class="table table-hover">
+          <thead>
+            <tr>
+              <th>变量</th>
+              <th>名称</th>
+              <th>说明</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>token</td>
+              <td>用户账号</td>
+              <td>付费用户必填，唯一标识。例：token=a1b2c3d4f5</td>
+            </tr>
+            <tr>
+              <td>code</td>
+              <td>彩票代码</td>
+              <td>部份接口格式支持逗号分割的多种彩票。例：code=cqssc,cqklsf</td>
+            </tr>
+            <tr>
+              <td>rows</td>
+              <td>返回行数</td>
+              <td>仅按最新查询时有效，默认5行。例：rows=3</td>
+            </tr>
+            <tr>
+              <td>format</td>
+              <td>数据格式</td>
+              <td>支持xml与json格式，默认json。例：format=json</td>
+            </tr>
+            <tr>
+              <td>date</td>
+              <td>日期参数</td>
+              <td>
+                <span class="red">仅选择"按日期查询"时有效 ，</span>格式yyyyMMdd或yyyy-MM-dd，低频按年返回。例：date=2015-02-18</td>
+            </tr>
+            <tr>
+              <td>callback</td>
+              <td>Jsonp回调函数</td>
+              <td>可选，为jsonp提供支持。例：callback=reader</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <hr>
+    <div class="row tipBox">
+      <div class="col-md-12 tipTitle">
+        <h4>参数变量备注</h4>
+      </div>
+      <div class="col-md-12 tipBody">
+        <ul>
+          <li>
+            接口网址与请求参数值皆不区分大小写
+          </li>
+          <li>接口支持GET与POST两种提交方式
+          </li>
+          <li>如果接口“按照日期查询”中的date参数留空，高频彩种默认返回当天数据，低频彩种默认返回当年数据 </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+
+
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+  <script src="http://cdn.bootcss.com/jquery/1.11.1/jquery.min.js"></script>
+  <!-- Include all compiled plugins (below), or include individual files as needed -->
+  <script src="js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="js/myJs.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,79 @@
+/*我的样式*/
+h4 {
+  font-weight: 700;
+}
+.open .acountInfo .acountBox {
+  color: blueviolet;
+  font-size: 18px;
+  font-weight: 700;
+}
+.open .acountInfo .acountBox .username {
+  color: #333;
+  font-size: 14px;
+  font-weight: 400;
+}
+.open .acountInfo .demoBox {
+  color: #a33;
+  font-size: 18px;
+  font-weight: 700;
+}
+.open .acountInfo .demoBox .demoInfo {
+  color: #333;
+  font-size: 14px;
+  font-weight: 400;
+}
+.open .operateBox .operateLabels {
+  font-weight: 700;
+  color: #337ab7;
+}
+.open .operateBox .operateBtns .btn-group {
+  width: 100%;
+}
+.open .operateBox .operateBtns .divder2 {
+  width: 50%;
+}
+.open .operateBox .operateBtns .divder3 {
+  width: 33.33%;
+}
+.open .operateBox .operateBtns .divder4 {
+  width: 25%;
+}
+.open .operateBox .operateBtns .divder5 {
+  width: 20%;
+}
+.open .operateBox .operateBtns .divder13 {
+  width: 7.70%;
+}
+.open .operateBox .operateBtns .label {
+  background: #3a3;
+  font-size: 12px;
+  margin-left: 4px;
+} 
+
+.open .portBox .portBody .subTitle {
+  color: #a33;
+}
+.open .portBox .portBody ul {
+  padding-left: 0;
+}
+.open .portBox .portBody ul .listItem {
+  list-style-type: none;
+  list-style: none;
+  line-height: 34px;
+  border:1px solid #d4d4d4;
+  position: relative;
+}
+.open .portBox .portBody ul .listItem .caizongTitle {
+  display: inline-block;
+  padding: 0 8px;
+  background: #d4d4d4;
+  margin-right:8px;
+}
+.open .portBox .portBody .listItem .btn {
+  float:right;
+  border-radius: 0;
+}
+
+.red {
+  color: #a33;
+}
